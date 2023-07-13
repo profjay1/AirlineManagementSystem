@@ -10,7 +10,8 @@ public class Login extends JFrame implements ActionListener{
     
     JLabel l1,l2;
     JTextField t1;
-    JPasswordField t2;
+    //JPasswordField t2;
+    JTextField t2;
     JButton b1,b2;
 
     Login(){
@@ -32,6 +33,7 @@ public class Login extends JFrame implements ActionListener{
         add(t1);
 
         t2=new JPasswordField();
+        //t2=new JTextField();
         t2.setBounds(150,70,150,30);
         add(t2);
         
@@ -73,10 +75,15 @@ public class Login extends JFrame implements ActionListener{
         if(ae.getSource()==b1){
         try{
             conn c1 = new conn();
+            
             String u = t1.getText();
-            String v = t2.getText();
+            String v = t2.getText(); 
+            //char[] v = t2.getPassword();
+            
+            c1.s = c1.c.createStatement();
             
             String q = "select * from login where username='"+u+"' and password='"+v+"'";
+            
             
             ResultSet rs = c1.s.executeQuery(q); 
             if(rs.next()){ 

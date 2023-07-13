@@ -47,6 +47,7 @@ public class Flight_Info extends JFrame{  //Second Frame
                 
                 try {
                     conn c = new conn();
+                    c.s = c.c.createStatement();
                     String str = "select f_code,f_name,src,dst,capacity,class_code,class_name from flight ,sector where f_code = '"+code+"'";
       
                     ResultSet rs = c.s.executeQuery(str);
