@@ -96,11 +96,11 @@ public class Payment_Details extends JFrame{ //Fifth
                 try {
                     String code  = textField.getText();
                     
-                    conn c3 = new conn();
-                    c3.s = c3.c.createStatement();
+                    conn c4 = new conn();
+                    c4.s = c4.c.createStatement();
                     String str = "select pnr_no,paid_amt,pay_date,cheque_no,card_no,ph_no from my_pay where pnr_no = '"+code+"'";
 					
-                    ResultSet rs = c3.s.executeQuery(str);
+                    ResultSet rs = c4.s.executeQuery(str);
 		
                     table.setModel(DbUtils.resultSetToTableModel(rs));
 					

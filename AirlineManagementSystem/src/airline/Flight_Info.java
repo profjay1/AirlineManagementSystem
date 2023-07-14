@@ -46,11 +46,11 @@ public class Flight_Info extends JFrame{  //Second Frame
                 String code = textField.getText();
                 
                 try {
-                    conn c = new conn();
-                    c.s = c.c.createStatement();
+                    conn c5 = new conn();
+                    c5.s = c5.c.createStatement();
                     String str = "select f_code,f_name,src,dst,capacity,class_code,class_name from flight ,sector where f_code = '"+code+"'";
       
-                    ResultSet rs = c.s.executeQuery(str);
+                    ResultSet rs = c5.s.executeQuery(str);
                     table.setModel(DbUtils.resultSetToTableModel(rs));	
                     
                 }catch(SQLException e){

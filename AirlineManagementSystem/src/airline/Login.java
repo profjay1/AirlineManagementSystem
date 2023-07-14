@@ -10,8 +10,8 @@ public class Login extends JFrame implements ActionListener{
     
     JLabel l1,l2;
     JTextField t1;
-    //JPasswordField t2;
-    JTextField t2;
+    JPasswordField t2;
+    //JTextField t2;
     JButton b1,b2;
 
     Login(){

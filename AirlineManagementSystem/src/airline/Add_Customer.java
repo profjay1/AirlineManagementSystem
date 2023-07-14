@@ -142,11 +142,11 @@ public class Add_Customer extends JFrame{ //Third Frame
                     }
                     
                     try {
-                        conn c4 = new conn();
-                        c4.s = c4.c.createStatement();
+                        conn c3 = new conn();
+                        c3.s = c3.c.createStatement();
                         String str = "INSERT INTO passenger values( '"+pnr_no+"', '"+address+"', '"+nationality+"','"+name+"', '"+gender+"', '"+ph_no+"','"+passport_No+"', '"+fl_code+"')";
                         
-                        c4.s.executeUpdate(str);
+                        c3.s.executeUpdate(str);
                         JOptionPane.showMessageDialog(null,"Customer Added");
                         setVisible(false);
                     

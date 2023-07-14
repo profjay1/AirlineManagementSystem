@@ -84,13 +84,13 @@ public class Journey_Details extends JFrame{  //Forth
 	Destination.setBounds(717, 270, 94, 20);
 	add(Destination);
         
-	String[] items1 =  {"OYO", "LAGOS", "PORTHARCUT", "OSUN","KWARA","KADUNA"};
+	String[] items1 =  {"OYO", "LAGOS", "PORTHARCUT", "OSUN","KWARA","KADUNA", "KWARA"};
 	JComboBox comboBox = new JComboBox(items1);
 	comboBox.setBounds(150, 100, 150, 27);
 	add(comboBox);
 		
 		
-	String[] items2 =  {"OYO", "LAGOS", "PORTHARCUT", "OSUN","ABUJA","KADUNA"};
+	String[] items2 =  {"OYO", "LAGOS", "PORTHARCUT", "OSUN","ABUJA","KADUNA", "KWARA"};
 	JComboBox comboBox_1 = new JComboBox(items2);
 	comboBox_1.setBounds(500, 100, 150, 27);
 	add(comboBox_1);
