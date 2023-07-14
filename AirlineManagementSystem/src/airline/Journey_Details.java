@@ -90,7 +90,7 @@ public class Journey_Details extends JFrame{  //Forth
 	add(comboBox);
 		
 		
-	String[] items2 =  {"OYO", "LAGOS", "PORTHARCUT", "OSUN","KWARA","KADUNA"};
+	String[] items2 =  {"OYO", "LAGOS", "PORTHARCUT", "OSUN","ABUJA","KADUNA"};
 	JComboBox comboBox_1 = new JComboBox(items2);
 	comboBox_1.setBounds(500, 100, 150, 27);
 	add(comboBox_1);
