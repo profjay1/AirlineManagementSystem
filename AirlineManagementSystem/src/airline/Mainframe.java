@@ -38,7 +38,7 @@ public class Mainframe extends JFrame{
 	setJMenuBar(menuBar);
 		
         JMenu AirlineSystem = new JMenu("AIRLINE SYSTEM");
-        AirlineSystem.setForeground(Color.GREEN);
+        AirlineSystem.setForeground(Color.BLUE);
 	menuBar.add(AirlineSystem);
 		
         JMenuItem FlightDetails = new JMenuItem("FLIGHT_INFO");
