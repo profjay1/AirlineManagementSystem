@@ -101,11 +101,11 @@ public class Journey_Details extends JFrame{  //Forth
                     String src  = (String) comboBox.getSelectedItem();
                     String dst  = (String) comboBox_1.getSelectedItem();
                     
-                    conn c1 = new conn();
-                    c1.s = c1.c.createStatement();
+                    conn c6 = new conn();
+                    c6.s = c6.c.createStatement();
                     
                     String str = "select * from reservation where src = '"+src+"' and dst = '"+dst+"'";
-                    ResultSet rs= c1.s.executeQuery(str);
+                    ResultSet rs= c6.s.executeQuery(str);
                     
                     table.setModel(DbUtils.resultSetToTableModel(rs));
                     /*else{

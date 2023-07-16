@@ -6,7 +6,7 @@ public class conn{
     Connection c = null;
     Statement s = null;
     
-    //For review
+    
     /*public conn(){  
         try{  
             Class.forName("com.mysql.cj.jdbc.Driver");  //com.mysql.jdbc.Driver - depricated

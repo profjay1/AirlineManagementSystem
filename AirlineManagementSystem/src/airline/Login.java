@@ -74,18 +74,18 @@ public class Login extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent ae){
         if(ae.getSource()==b1){
         try{
-            conn c1 = new conn();
+            conn c2 = new conn();
             
             String u = t1.getText();
             String v = t2.getText(); 
             //char[] v = t2.getPassword();
             
-            c1.s = c1.c.createStatement();
+            c2.s = c2.c.createStatement();
             
             String q = "select * from login where username='"+u+"' and password='"+v+"'";
             
             
-            ResultSet rs = c1.s.executeQuery(q); 
+            ResultSet rs = c2.s.executeQuery(q); 
             if(rs.next()){ 
                 new Mainframe().setVisible(true);
                 setVisible(false);

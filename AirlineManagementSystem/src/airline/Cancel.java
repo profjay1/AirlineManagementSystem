@@ -90,11 +90,11 @@ public class Cancel extends JFrame { //Sixth
 					
 					
 		try{	
-                    conn c6 = new conn();
-                    c6.s = c6.c.createStatement();
+                    conn c5 = new conn();
+                    c5.s = c5.c.createStatement();
                     String str = "INSERT INTO cancellation values('"+passenger_no+"', '"+cancellation_no+"', '"+cancellation_date+"', '"+flight_code+"')";
 		
-                    c6.s.executeUpdate(str);
+                    c5.s.executeUpdate(str);
                     JOptionPane.showMessageDialog(null,"Ticket Canceled");
                     setVisible(false);
 						
