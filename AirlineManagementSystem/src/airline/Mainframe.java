@@ -23,14 +23,14 @@ public class Mainframe extends JFrame{
         setLayout(null); 
 
         JLabel NewLabel = new JLabel("");
-	NewLabel.setIcon(new ImageIcon(ClassLoader.getSystemResource("icon/front.jpg")));
+	NewLabel.setIcon(new ImageIcon(ClassLoader.getSystemResource("icon/plane2.jpg")));
 	NewLabel.setBounds(0, 0, 1920, 990); 
 	add(NewLabel); 
         
-        JLabel AirlineManagementSystem = new JLabel("JIBSTECH AIRWAYS WELCOMES YOU");
-	AirlineManagementSystem.setForeground(Color.BLUE);
+        JLabel AirlineManagementSystem = new JLabel("NIGERIAN AIRWAYS WELCOMES YOU");
+	AirlineManagementSystem.setForeground(Color.RED);
         AirlineManagementSystem.setFont(new Font("Tahoma", Font.PLAIN, 32));
-	AirlineManagementSystem.setBounds(700, 60, 1000, 55);
+	AirlineManagementSystem.setBounds(400, 60, 1000, 55);
 	NewLabel.add(AirlineManagementSystem);
 		
 		

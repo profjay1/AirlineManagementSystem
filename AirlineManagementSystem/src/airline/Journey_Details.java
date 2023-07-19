@@ -84,13 +84,13 @@ public class Journey_Details extends JFrame{  //Forth
 	Destination.setBounds(717, 270, 94, 20);
 	add(Destination);
         
-	String[] items1 =  {"OYO", "LAGOS", "PORTHARCUT", "OSUN","KWARA","KADUNA"};
+	String[] items1 =  {"OYO", "LAGOS", "PORTHARCUT", "OSUN","KWARA","KADUNA", "KWARA"};
 	JComboBox comboBox = new JComboBox(items1);
 	comboBox.setBounds(150, 100, 150, 27);
 	add(comboBox);
 		
 		
-	String[] items2 =  {"OYO", "LAGOS", "PORTHARCUT", "OSUN","KWARA","KADUNA"};
+	String[] items2 =  {"OYO", "LAGOS", "PORTHARCUT", "OSUN","ABUJA","KADUNA", "KWARA"};
 	JComboBox comboBox_1 = new JComboBox(items2);
 	comboBox_1.setBounds(500, 100, 150, 27);
 	add(comboBox_1);
@@ -101,10 +101,11 @@ public class Journey_Details extends JFrame{  //Forth
                     String src  = (String) comboBox.getSelectedItem();
                     String dst  = (String) comboBox_1.getSelectedItem();
                     
-                    conn c = new conn();
+                    conn c6 = new conn();
+                    c6.s = c6.c.createStatement();
                     
                     String str = "select * from reservation where src = '"+src+"' and dst = '"+dst+"'";
-                    ResultSet rs= c.s.executeQuery(str);
+                    ResultSet rs= c6.s.executeQuery(str);
                     
                     table.setModel(DbUtils.resultSetToTableModel(rs));
                     /*else{
