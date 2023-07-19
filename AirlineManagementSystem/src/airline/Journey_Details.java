@@ -128,7 +128,8 @@ public class Journey_Details extends JFrame{  //Forth
         add(pane);
 		
 	setSize(860,600);
-        setLocation(400,200);
+        //setLocation(400,200);
+        setLocationRelativeTo(null);
 	setVisible(true);
 		
     }

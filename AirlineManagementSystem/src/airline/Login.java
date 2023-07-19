@@ -67,7 +67,8 @@ public class Login extends JFrame implements ActionListener{
 
         setVisible(true);
         setSize(600,300);
-        setLocation(600,350);
+        //setLocation(600,350);
+        setLocationRelativeTo(null);
 
     }
 
@@ -90,7 +91,7 @@ public class Login extends JFrame implements ActionListener{
                 new Mainframe().setVisible(true);
                 setVisible(false);
             }else{
-                JOptionPane.showMessageDialog(null, "Invalid login");
+                JOptionPane.showMessageDialog(null, "Invalid login details");
                 setVisible(false);
             }
         }catch(Exception e){
