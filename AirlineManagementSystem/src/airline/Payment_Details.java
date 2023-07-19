@@ -111,7 +111,8 @@ public class Payment_Details extends JFrame{ //Fifth
 	});
 		
 	setSize(960,590);
-        setLocation(400,200);
+        //setLocation(400,200);
+        setLocationRelativeTo(null);
 	setVisible(true);
 
     }

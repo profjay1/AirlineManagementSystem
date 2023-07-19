@@ -106,6 +106,7 @@ public class Cancel extends JFrame { //Sixth
 			
 	setSize(860,500);
 	setVisible(true);
-        setLocation(400,200);
+        //setLocation(400,200);
+        setLocationRelativeTo(null);
     }
 }

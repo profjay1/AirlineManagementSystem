@@ -115,7 +115,8 @@ public class Flight_Info extends JFrame{  //Second Frame
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 	setSize(900,650);
         setVisible(true);
-        setLocation(400,200);
+        //setLocation(400,200);
+        setLocationRelativeTo(null);
 		
     }
 }

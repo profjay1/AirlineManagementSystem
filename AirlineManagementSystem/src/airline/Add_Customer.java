@@ -158,7 +158,8 @@ public class Add_Customer extends JFrame{ //Third Frame
 			
             setSize(900,600);
             setVisible(true);
-            setLocation(400,200);
+            //setLocation(400,200);
+            setLocationRelativeTo(null);
 			
 	}
         
